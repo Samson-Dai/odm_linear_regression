@@ -21,9 +21,9 @@ work_dir=$LOCAL_LINEAR_REG_DATA_DIR"work"
 rm -f trace.txt
 
 # nextflow run $glmeiv_nf_pipeline \
-nextflow run https://github.com/Samson-Dai/distributed_linear_regresion -r main \
---odm $odm_fp \
---meta $meta_fp \
+nextflow run https://github.com/Samson-Dai/odm_linear_regression -r main \
+--odm_fp $odm_fp \
+--meta_fp $meta_fp \
 --x $x \
 --y $y \
 --k $k \
