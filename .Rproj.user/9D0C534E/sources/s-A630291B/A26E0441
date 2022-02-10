@@ -3,7 +3,7 @@
     "path": "~/research_code/odm_linear_regression/bin/fit_linear.R",
     "project_path": "bin/fit_linear.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "1432171480",
     "contents": "",
     "dirty": false,
     "created": 1643992126306.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "30,0",
-        "scrollLine": "23"
+        "cursorPosition": "31,0",
+        "scrollLine": "16"
     },
     "folds": "",
-    "lastKnownWriteTime": 1644380012,
+    "lastKnownWriteTime": 1644424738,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1644380012066,
+    "last_content_update": 1644424738024,
     "read_only": false,
     "read_only_alternatives": []
 }

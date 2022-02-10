@@ -17,21 +17,18 @@ i <- as.integer(args[6L])
 # 2. Load odm and columns
 #########################
 odm_mtx <- ondisc::read_odm(odm_fp, meta_fp)
-x_col <- as.matrix(odm_mtx[[,x]])
-y_col <- as.matrix(odm_mtx[[,y]])
 
-################################################################
-# 3. Subset the data frame, fit linear model and save the result
-################################################################
-#assume the first col is x, the second col is y
 n <- nrow(odm_mtx)
 chunk <- as.integer(n/k)
 start <-  (i-1) * chunk + 1
 end <- min(i*chunk, n)
 
-sub_x <- x_col[start:end]
-sub_y <- y_col[start:end]
+sub_x <- as.matrix(odm_mtx[[start:end,x]])
+sub_y <- as.matrix(odm_mtx[[start:end,y]])
 
+################################################################
+# 3. Subset the data frame, fit linear model and save the result
+################################################################
 linear_model <- lm(sub_y ~ sub_x)
 output_coef <- coef(linear_model)
 saveRDS(output_coef, "raw_result.rds")

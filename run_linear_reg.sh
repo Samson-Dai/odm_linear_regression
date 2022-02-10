@@ -8,8 +8,12 @@ export NXF_OPTS="-Xms500M -Xmx2G" # limit NF to 2 GB of memory
 # sets up the offsite directory structure
 source ~/.research_config
 
-odm_fp=$LOCAL_LINEAR_REG_DATA_DIR"gasp_scale_gene_expressions.odm"
-meta_fp=$LOCAL_LINEAR_REG_DATA_DIR"gasp_scale_gene_metadata.rds"
+#odm_fp=$LOCAL_LINEAR_REG_DATA_DIR"gasp_scale_gene_expressions.odm"
+#meta_fp=$LOCAL_LINEAR_REG_DATA_DIR"gasp_scale_gene_metadata.rds"
+
+#hard code for ondiscdata 
+odm_fp="/jet/home/sdai/R/x86_64-redhat-linux-gnu-library/4.0/ondiscdata/extdata/odm/gene/matrix.odm"
+meta_fp="/jet/home/sdai/R/x86_64-redhat-linux-gnu-library/4.0/ondiscdata/extdata/odm/gene/metadata.rds"
 k=10
 x=1
 y=2
