@@ -1,5 +1,6 @@
 
-*.log
-*.1
-.nextflow.log.2
-*.3
+.nextflow.log*
+.Rhistory
+.RData
+.Rproj.user/
+.nextflow/
